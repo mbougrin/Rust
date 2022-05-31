@@ -1,2 +1,1 @@
-source $HOME/.cargo/env
-export PATH="$HOME/.cargo/bin:$PATH"
+source ~/.cargo/env
