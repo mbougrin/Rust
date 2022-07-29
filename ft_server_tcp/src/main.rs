@@ -36,7 +36,7 @@ fn main() -> std::io::Result<()> {
             run_server(&server_ip_port);
         },
         _ => {
-            help(&args[0])
+            help(&args[0]);
         }
     }
     Ok(())
