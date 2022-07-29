@@ -10,11 +10,11 @@ fn handle_connection(mut stream: TcpStream) {
     println!("Request: {}", String::from_utf8_lossy(&buffer[..]));
 }
 
-fn help(name: &str) {
-    println!("{} listening_ipaddr listening_port", name);
+fn help(name: &String) {
+    println!("{name} listening_ipaddr listening_port");
 }
 
-fn run_server(server_ip_port: &str) {
+fn run_server(server_ip_port: &String) {
     let listener = TcpListener::bind(server_ip_port).unwrap();
 
     for stream in listener.incoming() {
